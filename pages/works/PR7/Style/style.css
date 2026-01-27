@@ -1,0 +1,116 @@
+/* Основные стили страницы */
+body {
+    font-family: Arial, sans-serif;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+h3 {
+    color: #555;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 5px;
+}
+
+/* Стили для абзацев с разными CSS-свойствами */
+
+/* Первые 10 абзацев с классами */
+.color {
+    color: #ff5722;
+}
+
+.font-family {
+    font-family: 'Georgia', serif;
+}
+
+.font-size {
+    font-size: 1.2em;
+}
+
+.font-weight {
+    font-weight: bold;
+}
+
+.font-style {
+    font-style: italic;
+}
+
+.text-align {
+    text-align: center;
+}
+
+.text-decoration {
+    text-decoration: underline;
+}
+
+.line-height {
+    line-height: 2;
+}
+
+.letter-spacing {
+    letter-spacing: 2px;
+}
+
+.text-transform {
+    text-transform: uppercase;
+}
+
+/* Остальные абзацы с идентификаторами */
+#text-indent {
+    text-indent: 40px;
+}
+
+#word-spacing {
+    word-spacing: 10px;
+}
+
+#text-shadow {
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+#vertical-align {
+    vertical-align: super;
+}
+
+#white-space {
+    white-space: nowrap;
+}
+
+#direction {
+    direction: rtl;
+}
+
+#unicode-bidi {
+    unicode-bidi: bidi-override;
+}
+
+#text-overflow {
+    width: 300px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+#word-break {
+    width: 200px;
+    word-break: break-all;
+}
+
+#overflow-wrap {
+    width: 200px;
+    overflow-wrap: break-word;
+}
+
+#text-justify {
+    text-align: justify;
+    text-justify: inter-word;
+}

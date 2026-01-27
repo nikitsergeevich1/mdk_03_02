@@ -1,0 +1,326 @@
+/* Общие настройки */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Шапка сайта */
+header {
+    background-color: #fff;
+    border-bottom: 2px solid #e0e0e0;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+header h1 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #2c3e50;
+}
+
+/* Навигационное меню */
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: #7f8c8d;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+nav a:hover,
+nav a:focus {
+    color: #2c3e50;
+    background-color: #ecf0f1;
+    outline: none;
+}
+
+/* Основная часть */
+main {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex: 1; /* Это ключевое: растягивает main, чтобы footer оказался внизу */
+}
+
+/* Стартовый блок */
+.start-block {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 3rem;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.start-block p {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+/* Блок навыков */
+.skills {
+    margin-bottom: 2rem;
+}
+
+.skills h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #2c3e50;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 0.5rem;
+}
+
+.skill-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background: #fff;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.skill-item img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #ddd;
+}
+
+.skill-item h3 {
+    font-size: 1.1rem;
+    color: #2c3e50;
+}
+
+.skill-item p {
+    flex: 1;
+    color: #555;
+}
+
+/* Блок курсов */
+.courses {
+    margin-top: 2rem;
+}
+
+.courses h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #2c3e50;
+    border-bottom: 2px solid #e74c3c;
+    padding-bottom: 0.5rem;
+}
+
+.course-item {
+    margin-bottom: 2rem;
+}
+
+.course-item h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: #2c3e50;
+}
+
+/* Стили для сертификатов (если используете div вместо img) */
+.certificate {
+    background: #fff;
+    border: 3px solid #d4af37;
+    padding: 1.5rem;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    font-family: 'Georgia', serif;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.certificate h4 {
+    font-size: 1.3rem;
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.certificate p {
+    margin: 0.5rem 0;
+    color: #555;
+    font-size: 0.95rem;
+}
+
+.certificate-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #2c3e50;
+    margin: 1rem 0;
+    font-family: 'Brush Script MT', cursive;
+}
+
+.certificate-course {
+    font-weight: bold;
+    color: #3498db;
+    font-size: 1.1rem;
+}
+
+.certificate-date {
+    font-style: italic;
+    color: #7f8c8d;
+    font-size: 0.9rem;
+    margin-top: 1rem;
+}
+
+/* Новости */
+.news-item {
+    background: #fff;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    border-left: 4px solid #3498db;
+}
+
+.news-item h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+    color: #2c3e50;
+}
+
+.news-item p {
+    margin-bottom: 0.5rem;
+    color: #555;
+}
+
+.news-item small {
+    color: #7f8c8d;
+    font-size: 0.9rem;
+}
+
+.news-item a {
+    display: inline-block;
+    margin-top: 0.5rem;
+    color: #3498db;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.news-item a:hover {
+    text-decoration: underline;
+}
+
+/* Личная информация */
+.about-me {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    text-align: center;
+}
+
+.about-me img {
+    border-radius: 50%;
+    border: 4px solid #ddd;
+    margin-bottom: 1rem;
+}
+
+.about-me h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    color: #2c3e50;
+}
+
+.about-me p {
+    margin: 0.5rem 0;
+    color: #555;
+    text-align: left;
+}
+
+.about-me strong {
+    color: #2c3e50;
+    font-weight: 600;
+}
+
+/* Подвал — теперь всегда внизу */
+footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+    font-size: 0.9rem;
+    margin-top: auto; /* Это заставляет footer "упираться" в низ */
+}
+
+footer p {
+    opacity: 0.8;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.5rem;
+    }
+
+    main {
+        padding: 1rem;
+    }
+
+    .start-block {
+        padding: 1.5rem;
+    }
+
+    .skill-item {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-me img {
+        width: 150px;
+        height: 150px;
+    }
+}
+/* Сертификаты — большие, по ширине контейнера */
+.course-item img {
+    width: 100%;
+    max-width: 600px; /* Макс. ширина — чтобы не растягивалось на очень больших экранах */
+    height: auto;
+    object-fit: contain; /* Сохраняет пропорции, не обрезает */
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    display: block;
+    margin: 0 auto; /* Центрирует по горизонтали */
+    transition: transform 0.3s ease; /* Лёгкий эффект при наведении */
+}

@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Логотип и заголовок сайта */
+.site-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 20px 0;
+    border-bottom: 2px solid #ddd;
+    margin-bottom: 20px;
+}
+
+.logo {
+    font-size: 32px;
+}
+
+.site-title {
+    font-size: 28px;
+    color: #2c3e50;
+    font-weight: 700;
+}
+
+/* Верхнее меню */
+.top-menu {
+    background: linear-gradient(135deg, #3498db, #2980b9);
+    padding: 10px 0;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.top-menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.top-menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background 0.3s ease;
+}
+
+.top-menu a:hover {
+    background-color: rgba(255,255,255,0.2);
+}
+
+/* Основной контент */
+.content {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.article-block {
+    background: white;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    border: 1px solid #eee;
+}
+
+.article-block h2 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+/* Изображения — плавающее выравнивание по левому краю */
+.float-left {
+    float: left;
+    width: 200px;
+    height: auto;
+    margin-right: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Текст абзацев */
+.article-block p {
+    margin-bottom: 15px;
+    font-size: 16px;
+    text-align: justify;
+}
+
+/* Ссылка "подробнее" */
+.read-more {
+    display: inline-block;
+    color: #3498db;
+    text-decoration: none;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.read-more:hover {
+    text-decoration: underline;
+}
+
+/* Нижнее меню */
+.bottom-menu {
+    margin-top: 40px;
+    padding: 15px 0;
+    background: #ecf0f1;
+    border-top: 1px solid #bdc3c7;
+    text-align: center;
+}
+
+.bottom-menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.bottom-menu a {
+    color: #7f8c8d;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 5px 10px;
+    transition: color 0.3s ease;
+}
+
+.bottom-menu a:hover {
+    color: #2c3e50;
+    text-decoration: underline;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .float-left {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+
+    .top-menu ul, .bottom-menu ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Регистрация — Никитин Никита</title>
+	<link rel="stylesheet" href="css1.css">
+</head>
+<body>
+	<header>
+		<h1>Персональный сайт Никитина Никиты</h1>
+		<a href="../../work.html">Вернуться к списку моих работ</a>
+		<p></p>
+		<a href="login.html">Авторизация</a>
+		<a href="register.html">Регистрация</a>
+		<a href="../map/index.html">Карта</a>
+		<p></p>
+	</header>
+
+	<main>
+		<form action="#" method="post">
+			<section>
+				<input type="text" name="surname" size="12" maxlength="15" placeholder="Фамилия" required>
+			</section>
+
+			<section>
+				<input type="text" name="name" size="12" maxlength="15" placeholder="Имя" required>
+			</section>
+
+			<section>
+				<input type="text" name="patronymic" size="12" maxlength="15" placeholder="Отчество">
+			</section>
+
+			<section>
+				<input type="email" name="email" size="12" maxlength="30" placeholder="email" required>
+			</section>
+
+			<section>
+				<input type="date" name="birthdate" id="dateInput">
+			</section>
+
+			<section>
+				<input type="password" name="password" size="12" maxlength="15" placeholder="Пароль" required>
+			</section>
+
+			<section>
+				<input type="password" name="password_confirm" size="12" maxlength="15" placeholder="Подтверждение пароля" required>
+			</section>
+
+			<section>
+				<input type="checkbox" name="accept" id="accept" checked required>
+				<label for="accept">Согласие на обработку персональных данных</label>
+			</section>
+
+			<section>
+				<button type="submit">Регистрация</button>
+			</section>
+		</form>
+	</main>
+</body>
+</html>

@@ -1,0 +1,73 @@
+body{
+    background-color: rgba(226, 6, 255, 0.733);
+}
+h1{ 
+    color:rgb(255, 255, 255);
+    font-size:xx-large;
+    font-family:'Times New Roman', Times, serif;
+    font-weight:normal;
+    font-style:italic;
+}
+h2{
+    color:rgb(0, 4, 255);
+    font-size:x-large;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight:normal;
+    font-style:oblique;
+}
+h3{
+    color:rgb(231, 0, 0);
+    font-size:x-large;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight:normal;
+    font-style:oblique;
+}
+h4{
+    color:rgb(255, 0, 0);
+    font-size:x-large;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight:normal;
+    font-style:oblique;
+}
+.one{
+    color:white;
+    width: 33px; 
+    height: 44px; 
+    background-color: rebeccapurple;
+    border: 5px red solid; 
+}
+.two{
+    color:red;
+    width: 33px;
+    height: 44px;
+    background-color: rgb(255, 255, 255);
+    border: 5px red solid;
+}
+.tri{
+    color: rgb(255, 255, 255);
+    width: 33px;
+    height: 44px;
+    background-color: green;
+    border: 5px yellow solid;
+}
+.for{
+    color: red;
+    width: 33px;
+    height: 44px;
+    background-color: green;
+    border: 5px yellow solid;
+}
+.five{
+    color: red;
+    width: 33px;
+    height: 44px;
+    background-color: white;
+    border: 5px yellow solid;
+}
+.six{
+    color: white;
+    width: 33px;
+    height: 44px;
+    background-color: rebeccapurple;
+    border: 5px yellow solid;
+}

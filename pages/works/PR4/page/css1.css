@@ -1,0 +1,92 @@
+/* Общие стили */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Arial, sans-serif;
+}
+
+body {
+	background-color: #f5f5f5;
+	color: #333;
+	padding: 20px;
+}
+
+header {
+	background-color: #4a6fa5;
+	color: white;
+	padding: 15px;
+	border-radius: 8px;
+	margin-bottom: 25px;
+	text-align: center;
+}
+
+header h1 {
+	font-size: 1.8em;
+	margin-bottom: 10px;
+}
+
+header a {
+	color: #e0e0ff;
+	text-decoration: none;
+	margin: 0 8px;
+	font-weight: bold;
+}
+
+header a:hover {
+	text-decoration: underline;
+}
+
+main {
+	max-width: 400px;
+	margin: 0 auto;
+	background: white;
+	padding: 20px;
+	border-radius: 8px;
+	box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+section {
+	margin-bottom: 15px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"] {
+	width: 100%;
+	padding: 8px;
+	font-size: 1em;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+}
+
+input[type="checkbox"] {
+	margin-right: 8px;
+}
+
+label {
+	font-size: 0.95em;
+	color: #555;
+}
+
+button {
+	width: 100%;
+	padding: 10px;
+	font-size: 1em;
+	background-color: #4a6fa5;
+	color: white;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	font-weight: bold;
+}
+
+button:hover {
+	background-color: #3a5a80;
+}
+
+/* Для пустых <p> — лучше удалить их из HTML, но если нужно — сделаем нейтральными */
+p {
+	margin: 5px 0;
+}

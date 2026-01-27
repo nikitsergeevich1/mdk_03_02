@@ -1,0 +1,135 @@
+/* Общий стиль страницы */
+body {
+    background: #f4f4f4; /* однотонный светло-серый фон */
+    font-family: Arial, Helvetica, sans-serif; /* шрифт без засечек */
+    margin: 0;
+    padding: 0;
+}
+
+/* Универсальный размер текста */
+* {
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+/* Заголовки */
+h1 {
+    font-size: 24px;
+}
+h2 {
+    font-size: 20px;
+}
+h3 {
+    font-size: 18px;
+}
+
+/* Новости */
+.news-item {
+    background: white;
+    padding: 16px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.news-image {
+    width: 100%;
+    height: 150px;
+    background: #ddd url('../img/news1.jpg') center/cover no-repeat;
+    margin-bottom: 12px;
+}
+
+/* Если у вас разные изображения для каждой новости — создайте отдельные классы */
+.news-item:nth-child(2) .news-image {
+    background-image: url('../img/news2.jpg');
+}
+.news-item:nth-child(3) .news-image {
+    background-image: url('../img/news3.jpg');
+}
+
+/* Навыки */
+.skill-item {
+    background: #e0f7fa;
+    padding: 16px;
+    margin-bottom: 16px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.skill-item img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Курсы */
+.course-item {
+    background: #e8f5e9;
+    padding: 16px;
+    margin-bottom: 16px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.course-item img {
+    width: 200px;
+    height: auto;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Дополнительно: навигация и прочее */
+header {
+    background: #2c3e50;
+    color: white;
+    padding: 1rem;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+footer {
+    background: #34495e;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+/* Пройденные курсы */
+.courses {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.course-item {
+    background: #e8f5e9;
+    padding: 16px;
+    border-radius: 8px;
+    text-align: center;
+    flex: 1 1 calc(50% - 20px);
+    max-width: 300px;
+}
+
+.course-item img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 10px;
+}
