@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Учебные курсы - Образовательный центр</title>
+    <link rel="stylesheet" href="style.css/style.css">
+    <script src="JS/script.josn" defer></script>
+</head>
+<body>
+    <!-- Шапка -->
+    <header>
+        <div class="header-container">
+            <div class="logo">Edu<span>CENTER</span></div>
+            <nav>
+                <ul>
+                    <li><a href="#courses">Курсы</a></li>
+                    <li><a href="#schedule">Расписание</a></li>
+                    <li><a href="#contacts">Контакты</a></li>
+                    <li><a href="#feedback">Обратная связь</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Основной контент -->
+    <main>
+        <!-- Описание курсов -->
+        <section id="courses" class="courses-section">
+            <h2 class="section-title">Наши учебные курсы</h2>
+            <div class="courses-grid">
+                <!-- Курс 1 -->
+                <div class="course-card">
+                    <div class="course-img">💻</div>
+                    <div class="course-content">
+                        <h3 class="course-title">Веб-разработка</h3>
+                        <p class="course-description">Освойте современные технологии веб-разработки: HTML5, CSS3, JavaScript, React и многое другое. Создавайте адаптивные и интерактивные веб-сайты.</p>
+                        <div class="course-info">
+                            <span class="course-duration">3 месяца</span>
+                            <span class="course-price">25 000 ₽</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Курс 2 -->
+                <div class="course-card">
+                    <div class="course-img">📱</div>
+                    <div class="course-content">
+                        <h3 class="course-title">Мобильная разработка</h3>
+                        <p class="course-description">Научитесь создавать приложения для iOS и Android с использованием Swift, Kotlin и кроссплатформенных фреймворков.</p>
+                        <div class="course-info">
+                            <span class="course-duration">4 месяца</span>
+                            <span class="course-price">30 000 ₽</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Курс 3 -->
+                <div class="course-card">
+                    <div class="course-img">🎨</div>
+                    <div class="course-content">
+                        <h3 class="course-title">Дизайн интерфейсов</h3>
+                        <p class="course-description">Освойте основы UI/UX дизайна, работу с инструментами Figma, Adobe XD и создание привлекательных пользовательских интерфейсов.</p>
+                        <div class="course-info">
+                            <span class="course-duration">2 месяца</span>
+                            <span class="course-price">20 000 ₽</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Расписание занятий -->
+        <section id="schedule" class="schedule-section">
+            <h2 class="section-title">Расписание занятий</h2>
+            <table class="schedule-table">
+                <thead>
+                    <tr>
+                        <th>Время</th>
+                        <th>Понедельник</th>
+                        <th>Среда</th>
+                        <th>Пятница</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="time-slot">10:00 - 12:00</td>
+                        <td>
+                            <div class="course-name">Веб-разработка</div>
+                            <div class="instructor">Иван Петров</div>
+                        </td>
+                        <td>
+                            <div class="course-name">Дизайн интерфейсов</div>
+                            <div class="instructor">Мария Сидорова</div>
+                        </td>
+                        <td>
+                            <div class="course-name">Веб-разработка</div>
+                            <div class="instructor">Иван Петров</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="time-slot">14:00 - 16:00</td>
+                        <td>
+                            <div class="course-name">Мобильная разработка</div>
+                            <div class="instructor">Алексей Смирнов</div>
+                        </td>
+                        <td>
+                            <div class="course-name">Веб-разработка</div>
+                            <div class="instructor">Иван Петров</div>
+                        </td>
+                        <td>
+                            <div class="course-name">Мобильная разработка</div>
+                            <div class="instructor">Алексей Смирнов</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="time-slot">18:00 - 20:00</td>
+                        <td>
+                            <div class="course-name">Дизайн интерфейсов</div>
+                            <div class="instructor">Мария Сидорова</div>
+                        </td>
+                        <td>
+                            <div class="course-name">Мобильная разработка</div>
+                            <div class="instructor">Алексей Смирнов</div>
+                        </td>
+                        <td>
+                            <div class="course-name">Дизайн интерфейсов</div>
+                            <div class="instructor">Мария Сидорова</div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Контакты -->
+        <section id="contacts" class="contacts-section">
+            <h2 class="section-title">Контакты</h2>
+            <div class="contacts-grid">
+                <div class="contact-item">
+                    <div class="contact-icon">📍</div>
+                    <div class="contact-info">
+                        <h3>Адрес</h3>
+                        <p>г. Москва, ул. Тверская, д. 15, офис 305</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">📞</div>
+                    <div class="contact-info">
+                        <h3>Телефоны</h3>
+                        <p>+7 (495) 123-45-67</p>
+                        <p>+7 (900) 555-12-34</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">✉️</div>
+                    <div class="contact-info">
+                        <h3>Email</h3>
+                        <a href="mailto:info@educenter.ru">info@educenter.ru</a>
+                        <a href="mailto:support@educenter.ru">support@educenter.ru</a>
+                    </div>
+                </div>
+            </div>
+            <div class="map-container">
+                <p>Карта расположения будет здесь</p>
+            </div>
+        </section>
+
+        <!-- Форма обратной связи -->
+        <section id="feedback" class="feedback-section">
+            <h2 class="section-title">Обратная связь</h2>
+            <form id="feedbackForm">
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="name">Ваше имя *</label>
+                        <input type="text" id="name" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Телефон</label>
+                        <input type="tel" id="phone" class="form-control" placeholder="+7 (___) ___-__-__">
+                    </div>
+                    <div class="form-group">
+                        <label for="course">Интересующий курс</label>
+                        <select id="course" class="form-control">
+                            <option value="">Выберите курс</option>
+                            <option value="web">Веб-разработка</option>
+                            <option value="mobile">Мобильная разработка</option>
+                            <option value="design">Дизайн интерфейсов</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="message">Сообщение *</label>
+                    <textarea id="message" class="form-control" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Отправить сообщение</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Подвал -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-links">
+                <a href="#courses">Курсы</a>
+                <a href="#schedule">Расписание</a>
+                <a href="#contacts">Контакты</a>
+                <a href="#feedback">Обратная связь</a>
+            </div>
+            <p class="copyright">© 2026 EduCENTER. Все права защищены.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
