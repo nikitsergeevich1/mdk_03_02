@@ -1,0 +1,21 @@
+.box {
+  width: 150px;
+  height: 150px;
+  background: #2db34a;
+  color: #000000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: shrink 2s ease-in-out forwards;
+}
+
+@keyframes shrink {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0);
+    opacity: 0;
+  }
+}

@@ -1,0 +1,19 @@
+.dot {
+  width: 10px;
+  height: 10px;
+  background: orange;
+  border-radius: 50%;
+  position: absolute;
+  animation: move 2s ease-in-out infinite;
+}
+
+@keyframes move {
+  0% {
+    left: 50px;
+    top: 50px;
+  }
+  100% {
+    left: 300px;
+    top: 50px;
+  }
+}
