@@ -1,9 +1,34 @@
 *{
-	padding:0; margin:0;
+    padding:0; margin:0;
 }
 p, h1{
-	margin:0 0 30px 0;
+    margin:0 0 30px 0;
 }
 .content{
-	max-width:900px; margin:0 auto; padding:0 30px;
+    max-width:900px; margin:0 auto; padding:0 30px;
+}
+
+/* Задача 1: Изображение .bridge-night */
+.bridge-night {
+    display: block;           /* делаем блочным */
+    margin: 0 auto 30px auto; /* центрируем + отступ снизу 30px */
+    max-width: 100%;          /* максимальная ширина 100% */
+}
+
+/* Задача 2: Изображение .bridge-day */
+.bridge-day {
+    float: left;              /* плавающий контейнер слева */
+    margin: 0 30px 30px 0;    /* отступы справа и снизу */
+    max-width: 40%;           /* макс. ширина 40% */
+    min-width: 200px;         /* мин. ширина 200px */
+}
+
+/* Задача 3: Медиа-запрос для экранов до 480px */
+@media (max-width: 480px) {
+    .bridge-day {
+        max-width: 100%;      /* на маленьких экранах - полная ширина */
+        float: none;          /* убираем обтекание */
+        margin: 0 auto 30px auto; /* центрируем */
+        display: block;
+    }
 }
